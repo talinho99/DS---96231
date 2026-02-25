@@ -1,0 +1,19 @@
+package com.example.encapsulamento;
+
+public class Livro {
+    private String titulo;
+    public String getTitulo() {
+        return titulo;
+    }
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+    public double getValor() {
+        return valor;
+    }
+    public void setValor(double valor) {
+        this.valor = valor;
+    }
+    private double valor;
+
+}
