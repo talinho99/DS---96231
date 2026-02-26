@@ -26,30 +26,31 @@ public class Main {
     
 
 // ENCAPSULAMENTO
-    Cliente cliente1 = new Cliente();
-    cliente1.setNome("Italo");
-    cliente1.setIdade(17);
-
+    Cliente cliente1 = new Cliente("Italo",17);
     
-   Pet pet1 = new Pet();
-   pet1.setNome("Gobila");
-   pet1.setIdade(3);
+    System.out.println("Nome: " + cliente1.getNome());
+    System.out.println("Nome: " + cliente1.getIdade());
+
+
+   Pet pet1 = new Pet("Gobila", 3, "Vira-lata", "Pequeno", "Ração");
+    System.out.println("Nome do Pet: " + pet1.getNome());
+    System.out.println("Idade do Pet: " + pet1.getIdade());
+    System.out.println("Raça do Pet: " + pet1.getRaca());
+    System.out.println("Porte do Pet: " + pet1.getPorte());
+    System.out.println("Alimentação do Pet: " + pet1.getAlimentacao());
+ 
     
-System.out.println("Nome: " + cliente1.getNome());
-System.out.println("Nome: " + cliente1.getIdade());
-
-System.out.println("Nome: " + pet1.getNome());
-System.out.println("Nome: " + pet1.getIdade());
 
 
 
-   Livro livro1 = new Livro();
-    livro1.setTitulo("O Senhor dos Anéis");
-    livro1.setValor(50.5);
 
-    System.out.println("Título do Livro: " + livro1.getTitulo());
-    System.out.println("Valor do Livro: " + livro1.getValor());
+   Livro livro1 = new Livro("Harry Potter", "James", 200, 290.70);
+   System.out.println("\nTítulo: " + livro1.getTitulo() + "\nAutor: " + livro1.getAutor() + "\nPáginas: " + livro1.getPaginas() + "Preço: " + livro1.getPreco());
 
+   Livro livro2 = new Livro("O Senhor dos Anéis", "J.R.R. Tolkien", 250, 450.00);
+   System.out.println("Título do Livro: " + livro2.getTitulo() + "Autor: " + livro2.getAutor() + "Páginas: "+ livro2.getPaginas() + "Preço: "+ livro2.getPreco());
+ 
+   
 
     Funcionario funcionario1 = new Funcionario();
     funcionario1.setNome("João");
@@ -60,6 +61,22 @@ System.out.println("Nome: " + pet1.getIdade());
     System.out.println("Cargo do Funcionário: " + funcionario1.getCargo());
     System.out.println("Salário do Funcionário: " + funcionario1.getSalario());
 
-    }
+    
 
+
+    Aluno aluno1 = new Aluno("João", "joao123@gmail.com");
+    System.out.println("Nome do Aluno: " + aluno1.getNome());
+    System.out.println("Nome do Email: " + aluno1.getEmail());
+
+
+    Veiculo veiculo1 = new Veiculo("ABC-1234", "Preto", 5, 50, 180.0, 12.5);
+    System.out.println("Placa: " + veiculo1.getPlaca());
+    System.out.println("Cor: " + veiculo1.getCor());
+    System.out.println("Passageiros: " + veiculo1.getPassageiros());
+    System.out.println("Capacidade do Tanque: " + veiculo1.getCapacidadetanque());
+    System.out.println("Velocidade Máxima: " + veiculo1.getVelmax());
+    System.out.println("Consumo Médio: " + veiculo1.getConsumomedio());
+
+
+}
 }

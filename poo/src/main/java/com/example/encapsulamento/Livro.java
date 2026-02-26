@@ -2,18 +2,38 @@ package com.example.encapsulamento;
 
 public class Livro {
     private String titulo;
+    private String autor;
+    public Livro(String titulo, String autor, int paginas, double preco) {
+        this.titulo = titulo;
+        this.autor = autor;
+        this.paginas = paginas;
+        this.preco = preco;
+    }
+    private int paginas;
+    private double preco;
     public String getTitulo() {
         return titulo;
     }
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
-    public double getValor() {
-        return valor;
+    public String getAutor() {
+        return autor;
     }
-    public void setValor(double valor) {
-        this.valor = valor;
+    public void setAutor(String autor) {
+        this.autor = autor;
     }
-    private double valor;
+    public int getPaginas() {
+        return paginas;
+    }
+    public void setPaginas(int paginas) {
+        this.paginas = paginas;
+    }
+    public double getPreco() {
+        return preco;
+    }
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
 
 }
