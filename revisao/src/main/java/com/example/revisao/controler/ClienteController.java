@@ -11,7 +11,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Map;
-
+@RestController
+@RequestMapping("clientes")
 public class ClienteController {
     @Autowired
     private ClienteService service;
