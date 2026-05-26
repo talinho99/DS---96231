@@ -1,0 +1,11 @@
+.mensagem h1{
+    font-size: 50px;
+    color: goldenrod;
+    margin: 20px auto;
+}
+
+.mensagemp{
+    color : red;
+    margin: 20px auto;
+    text-align: center;
+}
