@@ -1,0 +1,11 @@
+.header {
+    top: 0;
+    text-align: center;
+    background-color: aqua;
+}
+
+.header h1{
+    color: rebeccapurple;
+    font-family: 'Tahoma';
+}
+
