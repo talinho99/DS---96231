@@ -1,0 +1,55 @@
+.page-sobre-nos {
+  padding: 2rem 0;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.page-sobre-nos h1 {
+  color: var(--corp-primary);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 800;
+}
+
+.page-sobre-nos > p {
+  text-align: center;
+  color: var(--corp-text-light);
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.page-sobre-nos ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.page-sobre-nos li {
+  background-color: var(--corp-surface);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--corp-border);
+  border-left: 4px solid var(--corp-secondary);
+  color: var(--corp-text);
+  line-height: 1.7;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.page-sobre-nos li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.page-sobre-nos li strong {
+  color: var(--corp-primary);
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}

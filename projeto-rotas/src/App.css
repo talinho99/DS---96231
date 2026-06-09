@@ -1,0 +1,32 @@
+:root {
+  /* Paleta Corporativa */
+  --corp-bg: #F8FAFC;         /* Cinza muito claro para o fundo */
+  --corp-surface: #FFFFFF;    /* Branco para cards e cabeçalho */
+  --corp-primary: #1E293B;    /* Azul marinho bem escuro (títulos e rodapé) */
+  --corp-secondary: #2563EB;  /* Azul vibrante mas profissional (links e botões) */
+  --corp-text: #334155;       /* Cinza chumbo (textos de leitura) */
+  --corp-text-light: #64748B; /* Cinza claro (textos secundários) */
+  --corp-border: #E2E8F0;     /* Cinza bem suave para bordas */
+}
+
+body {
+  background-color: var(--corp-bg);
+  color: var(--corp-text);
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
