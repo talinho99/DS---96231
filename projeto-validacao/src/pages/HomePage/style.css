@@ -1,0 +1,53 @@
+.homepage {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #1b2a44 0%, #34486e 40%, #5b82b1 100%);
+    color: #f5f7fb;
+    text-align: center;
+}
+
+.homepage h1 {
+    max-width: 720px;
+    margin: 0 0 1rem;
+    font-size: clamp(2.4rem, 4vw, 4rem);
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.homepage p {
+    max-width: 640px;
+    margin: 0;
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: #dce6fb;
+    opacity: 0.95;
+}
+
+.homepage::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.12), transparent 28%),
+                radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.08), transparent 24%);
+    pointer-events: none;
+}
+
+.homepage {
+    position: relative;
+    overflow: hidden;
+}
+
+@media (max-width: 640px) {
+    .homepage {
+        padding: 2rem 1.2rem;
+    }
+
+    .homepage p {
+        font-size: 1rem;
+    }
+}
